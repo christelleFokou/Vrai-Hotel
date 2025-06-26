@@ -1,0 +1,645 @@
+@import "tailwindcss";
+
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    
+
+    .head{
+      border: 1px solid rgb(184, 178, 178);
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      padding: 0 35px;
+      overflow-x: scroll;
+      margin: 30px;
+      scrollbar-width: none;
+     
+    }
+    sup{
+      color: red;
+    }
+    .sign {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+    .sign .download-app{
+      border: 1px solid black;
+      border-radius: 15px;
+      /*text-align: center;*/
+      padding: 5px;
+      /*margin-right: 10px;*/
+      color: black;
+    }
+    /*.sign p{
+      padding-right: 40px;
+    }*/
+    .sign p{
+      color: red;
+    }
+    a{
+      color: red;
+      text-decoration: none;
+    }
+    a:hover{
+      color: blanchedalmond;
+    }
+    .blanc{
+      width: auto;
+      height: 96px;
+      padding: 8px 1px;
+      margin: auto;
+      background-color: white;
+      border: 1px solid black;
+      display: flex;
+      border-radius: 16px;
+      justify-content: space-between;
+    }
+    .blanc div{
+      border: 1px solid black;
+      display: flex;
+      margin: 10px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      width: 26%;
+      justify-content:flex-start;
+      border-radius: 10px ; 
+      height: 48px;
+      overflow-x: hidden;
+      scrollbar-width:none ;      
+     }
+     .destination{
+      display: flex;
+      flex-direction: row;
+     }
+    .destination  span i{
+        padding: 20px;
+    } 
+    .date{
+       display: flex;
+      flex-direction: row;
+    }
+    .date span i{
+      padding: 20px;
+    }
+    .travellers{
+      display: flex;
+      flex-direction: row;
+    }
+    .travellers span i{
+      padding: 20px;
+
+    }
+    .blanc p i{
+      padding-right: 14px;
+      padding-left: 14px;
+      padding-top: 50%;
+      height: 20px;
+      width: 20px;  
+    }
+    .blanc button{
+      background-color: blue;
+      color: white;
+      border-radius:50px;
+      border-color:blue;
+      padding: 10px;
+      width: auto;
+      height: 50px;
+      margin: 10px;
+      margin-top:10px ;
+    }
+   
+    .firstImage{
+      width: auto;
+      margin: 30px;
+      border-radius: 15px;
+      height: 400px;
+      justify-content: center;
+    }
+    .firstImage .message{
+      text-align: center;
+      font-size: 40px;
+      font-family:"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: normal;
+    }
+    .images{
+      margin: 30px;
+      margin-top:10px;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      height:200px ;
+    }
+    .images div{
+     width: 400px;
+     height: 150px;
+     margin: 2px;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: row;
+    }
+    .all{
+      padding:80px;
+    }
+    .images div p{
+      width: 50%;
+      border: 1px solid black;
+      height: 100%;
+      box-sizing: border-box;
+    
+    }
+    .images div .sousun, .sousdeux, .soustrois{
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background-color: #f8f3e7;
+       justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      scrollbar-width: none;
+    }
+     .un .sousun .one{
+      padding:"20px";
+      font-weight:"bold";
+    }
+    .sousun .two{
+      padding-left:"20px";
+      font-size:"1em";
+      padding-bottom:"auto"
+    }
+     .images div .sousUn, .sousDeux, .sousTrois{
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .allstay{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 8px;
+      margin: 30px;
+      overflow: scroll;
+      scrollbar-width: none;
+    }
+    .stay{
+      border: none;
+      display: flex;
+      height: 120px;
+      justify-content:center;
+      align-items: center;
+      border-radius: 20px ;
+      background-color: #f8f3e7;
+  
+     }
+     .stay .tout{
+      width: 80%;
+      margin-top: 2px;
+      display: flex;
+      flex-direction: column;
+      overflow-x: scroll;
+      scrollbar-width: none;
+     }
+     .stay p{
+      padding:10% ;
+      width: 20%;
+     }
+     .stay p i{
+    height: 100%;
+    justify-content: center; 
+    margin: auto;
+    }
+    .recherche{
+      margin: 30px;
+      font-size: 30px;
+      font-family:Arial, Helvetica, sans-serif, Times, serif;
+    }
+    .title{
+      font-weight: bold;
+      font-size: 4px;
+    }
+    .yaahot{
+      border: 1px solid black;
+      display: flex;
+      height: 180px;
+      width: 245px;
+      border-radius: 20px ;
+      flex-direction: column;
+      margin: 30px;
+
+    }
+    .yaahot .image{
+      height: 70%;
+      width: 100%;
+    }
+    .yaahot .image img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      
+    }
+
+    .yaahot .tout span {
+      height: 30%;
+      padding-left: 4px;
+      padding-right: 4px;
+      justify-content: center;
+      
+    }
+    .yaahot .tout{
+      border-top: 1px solid beige;
+    }
+    .firstImage{
+    
+      background: url(/fontawesome-free-6.7.2-web/Hcom_Hero_Banner_Masked.webp);
+      background-position: center;
+      background-size: cover;
+    }
+    .charge{
+      display: flex;
+      height: 124px;
+      border: 1px solid rgb(173, 167, 167);
+       border-radius: 15px;
+       text-align: center;
+       justify-content: space-between;
+       flex-direction: row;
+       width: auto;
+       margin: 30px;
+      
+    }
+    .deuxp{
+      display: flex;
+    }
+    .charge img{
+     padding: 12px;
+      height: 64px;
+      width: 48px;
+    }
+    .charge button{
+      width: 80px;
+      height: 48px;
+      border-radius: 20px;
+      background-color: blue;
+      color:white;
+      border: none;
+      margin-right: 20px;
+      margin-top:20px ;
+
+    }
+    .sousun{
+      background-color: #f8f3e7;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+    }
+    .images2{
+      margin: 30px;
+      width: auto;
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      gap: 0.1px;
+      overflow-x: scroll;
+      scrollbar-width: none;
+    }
+    .images2 span{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .images2 span span{
+      font-weight: bold;
+      color: white;
+      padding: 10px;
+    }
+
+    .images2 .img1{
+      background: url(/fontawesome-free-6.7.2-web/seaview.jpg);
+      width: 220px;
+      height: 270px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 25px;
+    }
+    .images2 .img2{
+      background: url(/fontawesome-free-6.7.2-web/family.jpg);
+      width: 220px;
+      height: 270px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 25px;
+    }
+    .images2 .img3{
+      background: url(/fontawesome-free-6.7.2-web/lit2.jpg);
+      width: 220px;
+      height: 270px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 25px;
+    }
+      .images2 .img4{
+      background: url(/fontawesome-free-6.7.2-web/farm.jpeg);
+      width: 220px;
+      height: 270px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 25px;
+    }
+      .images2 .img5{
+      background: url(/fontawesome-free-6.7.2-web/cottage.jpeg);
+      width: 220px;
+      height: 270px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 25px;
+    }
+
+    .container1{
+      height: 380px;
+      width: 260px;
+    border: 1px solid rgb(188, 186, 186);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    }
+    .container1 .div1{
+      height: 45%;
+      border-bottom: 1px solid rgb(188, 186, 186);
+    }
+    .container1 .div2{
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-right: 10px;
+    }
+    .container1 .span1{
+      padding: 5px;
+       height: 50%;
+      width: 260px;
+      display: flex;
+      flex-direction: column;
+    }
+    .container1 .span2{
+      height: 50%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-top: 20px;
+      margin-right: 15px;
+    }
+
+    .images3{
+      margin: 30px;
+      display: grid;
+      grid-template-columns: repeat(9,1fr);
+      gap: 12px;
+      overflow-x: scroll;
+      scrollbar-width: none;
+    }
+
+    .container2{
+      height: 380px;
+      width: 260px;
+    border: 1px solid rgb(188, 186, 186);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    }
+    .container2 .div1{
+      height: 45%;
+      border-bottom: 1px solid rgb(188, 186, 186);
+    }
+    .container2 .div2{
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-right: 10px;
+    }
+    .container2 .span1{
+      padding: 5px;
+       height: 50%;
+      width: 260px;
+      display: flex;
+      flex-direction: column;
+    }
+    .container2 .span2{
+      padding: 5px;
+      height: 50%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 20px;
+      margin-right: 15px;
+    }
+
+     .container3{
+    height: 300px;
+    width: 260px;
+    border: 1px solid rgb(188, 186, 186);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    }
+    .container3 .div1{
+      height: 55%;
+      border-bottom: 1px solid rgb(188, 186, 186);
+    }
+    .container3 .div2{
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-right: 10px;
+    }
+    .container3 .span1{
+      padding: 5px;
+       height: 50%;
+      width: 260px;
+      display: flex;
+      flex-direction: column;
+    }
+    .container3 .span2{
+      padding: 5px;
+      height: 50%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 20px;
+      margin-right: 15px;
+    }
+    .link{
+      margin: 30px;
+    }
+    .link a{
+      color: black;
+    }
+    .link a:hover{
+      color: blue;
+    }
+    .saidi{
+      width: auto;
+      border-radius: 20px;
+      height: 200px;
+      margin: 30px;
+      display: flex;
+      border: 1px solid rgb(220, 216, 216);
+    }
+    .saidi .image{
+      border-right: 1px solid rgb(220, 216, 216);
+      width: 50%;
+    }
+    .saidi .texte{
+      width: 50%;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+    }
+     .saidi .texte div{
+      height: 50%;
+     }
+     .saidi .texte div img{
+        height: 55%;
+        width: 15%;
+     }
+     .saidi .image img{
+      height: 100%;
+      width: 100%;
+      border-radius: 20px 0 0 20px;
+     }
+
+     .graphe{
+      width: auto;
+      display: flex;
+      margin: 30px;
+     }
+     .graphe .image{
+      width: 10%;
+     }
+     .graphe .image img{
+      width: 100%;
+      height: 70%;
+      object-position: center;
+     }
+     .graphe .texte{
+      width: 90%;
+     }
+
+    .images4{
+      margin: 30px;
+      height: 180px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 18px;
+      border-radius: 20px;
+      overflow-x:scroll;
+      scrollbar-width: none;
+    } 
+    .images4 div{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .images4 div span{
+      padding: 10px;
+    }
+    .images5{
+      margin: 30px;
+      border: 1px solid  rgb(220, 216, 216);
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 2px;
+      border-radius: 20px;
+      width: auto;
+    }
+    .images5 .texte{
+      padding: 12px;
+    }
+    .images5 .image img{
+      border-radius:20px 0 0 20px ;
+      width: 100%;
+      height: 100%;
+      object-position: center;
+    } 
+
+    .codeQR img{
+      margin-top: 5%;
+      margin-left:55%;
+      width: 40%;
+      height: 40%;
+    }
+
+    
+   
+    
+    

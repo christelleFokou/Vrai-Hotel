@@ -1,0 +1,45 @@
+footer{
+    border: 1px solid   #f8f3e7;
+    border-radius: 20px;
+    margin: 30px;
+    background-color:   #f8f3e7;
+    width: auto;
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+
+}
+.title{
+    font-size: 1.5em;
+    margin: 30px;
+}
+.foot{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    font-size: 12px;
+}
+li{
+    padding: 8px;
+    list-style: none;
+}
+li a{
+    font-weight: bold;
+    text-decoration: none ;
+    color: #1668e3;
+
+
+}
+li a:hover{
+    text-decoration: underline;
+    color: #1668e3;
+}
+.end{
+    padding: 30px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.end span{
+    font-size: 12px;
+    text-align: center;
+}
